@@ -1,0 +1,48 @@
+body {
+    background: radial-gradient(ellipse at center, #181f2a 0%, #090a0f 100%);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+canvas {
+    background: #101624;
+    border-radius: 14px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.55), 0 0 0 4px #24324b inset;
+    display: block;
+}
+
+#startMenu {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(10,12,26,0.88);
+    flex-direction: column;
+    z-index: 10;
+}
+
+#startMenu button {
+    background: linear-gradient(90deg, #4267b2 0%, #4896ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 38px;
+    font-size: 1.4em;
+    margin-top: 22px;
+    box-shadow: 0 2px 14px #21325b99;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#startMenu button:hover {
+    background: linear-gradient(90deg, #4896ff 0%, #4267b2 100%);
+}
